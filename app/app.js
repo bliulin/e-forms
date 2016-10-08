@@ -18,7 +18,7 @@
                 controller: "HomeController"
             })         
             .otherwise({
-                redirectTo: "/"
+                redirectTo: "*"
                 //templateUrl: "notfound.html"
             });
     });
