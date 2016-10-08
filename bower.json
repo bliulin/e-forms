@@ -1,0 +1,11 @@
+{
+  "name": "eforms",
+  "version": "0.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.4"
+  },
+  "resolutions": {
+    "angular": "~1.4.4"
+  }
+}
