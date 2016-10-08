@@ -3,24 +3,20 @@
 	
 	var app = angular.module("eformsApp", ["ngRoute"]);
 		
-	app.config(function ($routeProvider) {
+	app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
         $routeProvider            
-            .when("/forms", {
+            .when("/form/:id", {
                 templateUrl: "/views/form.html",
                 controller: "FormController"
             })
-            .when("/", {
-                templateUrl: "index.html",
+            .when("/forms", {
+                templateUrl: "/views/form-list.html",
                 controller: "HomeController"
-            })     
-            .when("/ceva", {
-                templateUrl: "index",
-                controller: "HomeController"
-            })         
+            })                          
             .otherwise({
-                redirectTo: "*"
+                redirectTo: "/forms"
                 //templateUrl: "notfound.html"
             });
-    });
+    }]);
 	
 })();

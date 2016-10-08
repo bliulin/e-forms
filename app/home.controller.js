@@ -4,22 +4,7 @@
 
     var HomeController = function ($scope, $location, formsService) {
         var vm = this;
-        $scope.forms = [];
-        
-        $scope.gridOptions = {
-            data: 'forms'
-            , enableGridMenu: true
-            , enableRowSelection: true
-            , enableRowHeaderSelection: false
-            , noUnselect: true
-            , multiSelect: false
-        };
-        $scope.gridOptions.onRegisterApi = function (gridApi) {
-            $scope.gridApi = gridApi;
-            gridApi.selection.on.rowSelectionChanged($scope, function (row) {
-                return $location.path('/form/' + row.entity.id);                
-            });
-        };
+        $scope.forms = [];            
 
         var onGetFormsCompleted = function(data) {
             $scope.forms = data;

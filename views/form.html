@@ -1,29 +1,10 @@
-<!DOCTYPE html>
-<html>
-
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-route/angular-route.min.js"></script>
-  
-  <script src="/app/app.js"></script>
-  <script src="/app/forms.service.js"></script>
-  <script src="/app/home.controller.js"></script>
-  <script src="/app/form.controller.js"></script>
-
-<head>    
-  <title>eForms</title>
-</head>
-
-<!--<body ng-app="eformsApp">
-  <div>ceva
-    <div ng-repeat="form in forms">
-       {{name}}
-    </div>
-</div>
-</body>-->
-
+<h2>Edit form definition</h2>
 <div ng-app="eformsApp" ng-controller="FormController">
-    
-    Hi Forms!
+    <div>
+      <span>Form name: </span> {{form.Name}}
+    </div>
+    <div>Form template:</div>
+    <div>{{form.Template}}</div>
 </div>
 
 </html>

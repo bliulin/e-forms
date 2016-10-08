@@ -13,11 +13,11 @@
   <title>eForms</title>
 </head>
 
-<div ng-app="eformsApp" ng-controller="HomeController">
-    <div ng-repeat="form in forms">
-        <a href="#/forms/{{form.Id}}">{{form.Name}}</a>
-    </div>
-</div>
+<body ng-app="eformsApp">
+
+    <div ng-view></div>
+
+</body>
 
 </html>
 
