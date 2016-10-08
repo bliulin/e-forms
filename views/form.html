@@ -7,6 +7,7 @@
   <script src="/app/app.js"></script>
   <script src="/app/forms.service.js"></script>
   <script src="/app/home.controller.js"></script>
+  <script src="/app/form.controller.js"></script>
 
 <head>    
   <title>eForms</title>
@@ -20,17 +21,9 @@
 </div>
 </body>-->
 
-<div ng-app="eformsApp" ng-controller="HomeController">
-    <div ng-repeat="form in forms">
-        <a href="/forms/{{form.Id}}">{{form.Name}}</a>
-    </div>
+<div ng-app="eformsApp" ng-controller="FormController">
+    
+    Hi Forms!
 </div>
 
 </html>
-
-
-
-
-
-
-
