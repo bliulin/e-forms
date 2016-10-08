@@ -6,7 +6,7 @@
         var vm = this;
         $scope.forms = {};
         
-        
+        alert('A');
     };
 
     app.controller("FormController", ["$scope", "$location", "formsService", FormController]);

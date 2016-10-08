@@ -5,8 +5,8 @@
 		
 	app.config(function ($routeProvider) {
         $routeProvider            
-            .when("/forms/:id", {
-                templateUrl: "/views/form",
+            .when("/forms", {
+                templateUrl: "/views/form.html",
                 controller: "FormController"
             })
             .when("/", {
