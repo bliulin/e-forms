@@ -82,9 +82,18 @@
             return deferred.promise;
         };
 
+        var saveForm = function(formID, content) {
+            //TODO: save form here.
+
+            var deferred = $q.defer();
+            deferred.resolve(true);
+            return deferred.promise;
+        };
+
         return {
             getForms: getForms,
-            getFormById: getFormById
+            getFormById: getFormById,
+            saveForm: saveForm
         };
     };
 

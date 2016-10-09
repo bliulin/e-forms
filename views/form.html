@@ -1,10 +1,15 @@
 <h2>Edit form definition</h2>
-<div ng-app="eformsApp" ng-controller="FormController">
+<div ng-app="eformsApp">
     <div>
-      <span>Form name: </span> {{form.Name}}
+      <span>Form name: </span> <strong>{{form.Name}}</strong>
     </div>
     <div>Form template:</div>
-    <div>{{form.Template}}</div>
+    <!--<div>{{form.Template}}</div>-->
+    <div class="content">
+    <div class="build-wrap"></div>
+    <div class="render-wrap"></div>
+    <button id="edit-form">Edit Form</button>
+  </div>
 </div>
 
 </html>
